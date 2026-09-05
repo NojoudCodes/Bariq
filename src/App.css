@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-cream-primary: #FAF7F2;
+  --color-cream-secondary: #F1EAE0;
+  --color-ink: #242028;
+  --color-ink-soft: #615C68;
+  --color-terracotta: #B96A4C;
+  --color-terracotta-dark: #9C5539;
+  --color-terracotta-tint: #F3E1D8;
+  --color-sage: #6E8570;
+  --color-sage-tint: #E4EAE1;
+  --color-white: #FFFFFF;
+  --color-line: #E4DCCE;
+  --color-gold: #B08D57;
+}
+
+@theme inline {
+  --background-image-terracotta-dark-gradient: linear-gradient(
+    45deg,
+    #6E3826,
+    #9C5539,
+    #D28B6B
+  );
+}
+
+html{ scroll-behavior: smooth; }
+body {
+  background-color: var(--color-cream-primary);
+  color: var(--color-ink);
+  font-family:"IBM Plex Sans Arabic", sans-serif;
+}
