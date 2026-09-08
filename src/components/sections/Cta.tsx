@@ -1,4 +1,5 @@
 import { CiLocationOn, CiClock2, CiPhone} from "react-icons/ci";
+import { clinicInfo } from "../../data/clinicInfo";
 
 export default function Cta() {
   return (
@@ -8,10 +9,10 @@ export default function Cta() {
           <CiLocationOn size={20} className="text-terracotta" />
           <div className="text-right">
             <h4 className="font-semibold text-lg text-ink">
-              حي الروضة، جدة
+             {clinicInfo.neighborhood}
             </h4>
             <p className="text-sm text-gray-400">
-              شارع الأمير سلطان، مبنى ١٤
+             {clinicInfo.street}
             </p>
           </div>
         </div>
@@ -19,10 +20,10 @@ export default function Cta() {
           <CiClock2 size={20} className="text-terracotta" />
           <div className="text-right">
             <h4 className="font-semibold text-lg text-ink">
-              السبت - الخميس
+             {clinicInfo.workingHours[0].days}
             </h4>
             <p className="text-sm text-gray-400">
-              ٩:٠٠ ص - ٩:٠٠ م
+             {clinicInfo.workingHours[0].hours }
             </p>
           </div>
         </div>
@@ -30,7 +31,7 @@ export default function Cta() {
           <CiPhone size={20} className="text-terracotta" />
           <div className="text-right">
             <h4 className="font-semibold text-lg text-ink">
-              1234 600 12 966+
+              {clinicInfo.phone}
             </h4>
             <p className="text-sm text-gray-400">
               احجز مباشرة أو عبر واتساب

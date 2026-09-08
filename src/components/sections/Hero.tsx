@@ -1,14 +1,13 @@
 import Button from "../ui/Button";
 import Titles from "../ui/Titles";
 
-
 export default function Hero() {
   return (
-    <header className="flex flex-col lg:flex-row justify-center lg:justify-around items-center h-96 lg:h-screen px-15">
+    <header id="hero" className="flex flex-col lg:flex-row justify-center lg:justify-around items-center h-96 lg:h-screen px-15">
       <div className="lg:flex-1">
         <Titles 
           subtitle="عيادة أسنان مرخّصة — حي الروضة، جدة"
-          SubtitleStyles="text-sm text-terracotta"
+          subtitleStyles="text-sm text-terracotta"
           title="رعاية أسنان موثوقة، لكل أفراد العائلة"
           titleStyles="font-bold text-2xl lg:text-6xl text-ink mt-3 leading-snug"
         />

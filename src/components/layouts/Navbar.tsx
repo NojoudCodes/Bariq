@@ -9,6 +9,34 @@ import { useState } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const links = [
+    {
+      id: 1,
+      linkLabel: "الرئيسية",
+      path: "/"
+    },
+    {
+      id: 2,
+      linkLabel: "الخدمات",
+      path: "/services"
+    },
+    {
+      id: 3,
+      linkLabel: "الأطباء",
+      path: "/doctors"
+    },
+    {
+      id: 4,
+      linkLabel: "الأسئلة الشائعة",
+      path: "/faq"
+    },
+    {
+      id: 5,
+      linkLabel: "الموقع والتواصل",
+      path: "/contact"
+    },
+  ]
+
   return (
     <>
       <TopNav />
@@ -20,11 +48,13 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="hidden lg:flex gap-4">
-          <Link to="/" className="font-semibold text-sm text-ink hover:text-terracotta">الرئيسية</Link>
-          <Link to="/services" className="font-semibold text-sm text-ink hover:text-terracotta">الخدمات</Link>
-          <Link to="/doctors" className="font-semibold text-sm text-ink hover:text-terracotta">الأطباء</Link>
-          <Link to="/faq" className="font-semibold text-sm text-ink hover:text-terracotta">الأسئلة الشائعة</Link>
-          <Link to="/contact" className="font-semibold text-sm text-ink hover:text-terracotta">الموقع والتواصل</Link>
+          {links.map((link) => (
+            <Link
+              key={link.id}
+              to={link.path} 
+              className="font-semibold text-sm text-ink hover:text-terracotta"
+            >{link.linkLabel}</Link>
+          ))}
         </div>
         <div 
           className={`absolute top-0 left-0 ${isOpen ? "flex" : "hidden"} flex-col w-56 bg-cream-secondary 
@@ -36,11 +66,13 @@ export default function Navbar() {
             onClick={() => setIsOpen(false)} 
           />
           <div className="flex flex-col items-center gap-4 mt-10">
-            <Link to="/" className="font-semibold text-sm text-ink">الرئيسية</Link>
-            <Link to="/services" className="font-semibold text-sm text-ink">الخدمات</Link>
-            <Link to="/doctors" className="font-semibold text-sm text-ink">الأطباء</Link>
-            <Link to="/faq" className="font-semibold text-sm text-ink">الأسئلة الشائعة</Link>
-            <Link to="/contact" className="font-semibold text-sm text-ink">الموقع والتواصل</Link>
+            {links.map((link) => (
+              <Link 
+                key={link.id}
+                to={link.path} 
+                className="font-semibold text-sm text-ink"
+              >{link.linkLabel}</Link>
+            ))}
           </div>
         </div>
         <div className="flex lg:hidden">
@@ -48,7 +80,7 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:block">
           <Button
-            path="/services"
+            path="/contact"
             text="احجز موعدًا"
             styles="bg-terracotta text-sm text-white py-2 px-4"
           />
