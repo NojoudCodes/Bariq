@@ -71,6 +71,7 @@ export default function Navbar() {
                 key={link.id}
                 to={link.path} 
                 className="font-semibold text-sm text-ink"
+                onClick={() => setIsOpen(false)} 
               >{link.linkLabel}</Link>
             ))}
           </div>

@@ -6,12 +6,12 @@ export default function Doctors() {
     <section>
       <div className="bg-cream-primay px-10 lg:px-15 py-32">
         <Titles
-          subtitle="خدماتنا"
+          subtitle="فريقنا الطبي"
           subtitleStyles="text-sm text-terracotta"
-          title="خدمات طب الأسنان الشاملة"
+          title="أطباء مرخّصون وذوو خبرة"
           titleStyles="font-bold text-ink text-xl lg:text-3xl mt-4"
         />
-        <p className="mt-4 text-sm text-gray-700">خطط علاج مصممة حسب حالتك، بأحدث الأجهزة التشخيصية والعلاجية، وبأسعار واضحة من أول استشارة.</p>
+        <p className="mt-4 text-sm text-gray-700">فريق من ٦ أطباء أسنان متخصصين، بإشراف مباشر من مديرة العيادة الطبية.</p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 bg-cream-secondary px-15 py-32">
         {doctors.map((doctor) => (
