@@ -1,219 +1,140 @@
-# ✨ Bariq
- 
-Bariq is a modern dental clinic website built with React, TypeScript, Vite, and Tailwind CSS.
- 
-The project provides a clean and responsive interface for presenting dental services, introducing doctors, answering frequently asked questions, and providing a way for patients to get in touch with the clinic.
- 
-## 🌐 Overview
- 
-Bariq is designed as a professional dental clinic website with a simple, user-friendly experience.
- 
-The application includes dedicated pages for:
- 
-- 🏠 Home
-- 🦷 Dental Services
-- 👨‍⚕️ Doctors
-- ❓ Frequently Asked Questions
-- 📞 Contact
+# ✨ Bariq (بريق لطب الأسنان) — Dental Clinic Website
 
-The home page combines a hero section, call-to-action content, information about why patients should choose the clinic, and an overview of available services.
- 
+A modern, multi-page dental clinic website built as a portfolio project — presenting services, doctors, FAQs, and a real, validated appointment-booking form for a fictional clinic in Jeddah.
+
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white)
+![React Hook Form](https://img.shields.io/badge/React_Hook_Form-EC5990?style=flat&logo=reacthookform&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=flat&logo=framer&logoColor=0055FF)
+
+<!-- Optional: add a real screenshot once deployed -->
+<!-- ![Bariq preview](./preview.png) -->
+
+## 🌐 Overview
+
+Bariq presents a professional dental clinic experience across five dedicated pages — home, services, doctors, FAQ, and contact/booking. The visual direction uses a warm cream/terracotta palette with IBM Plex Sans Arabic, aiming for a calm, trustworthy clinical feel rather than a clinical-cold one.
+
 ## ✨ Features
- 
-- Responsive dental clinic website
-- Modern and clean user interface
-- Dedicated services page
-- Doctors and specialists section
-- FAQ page
-- Contact page
-- Reusable Navbar and Footer components
-- Reusable UI components
-- Client-side routing
-- Responsive layouts using Tailwind CSS
-- TypeScript for type-safe development
-- ESLint configuration for code quality
-## 🛠️ Tech Stack
- 
-| Technology | Purpose |
-|---|---|
-| React | Frontend UI |
-| TypeScript | Type-safe JavaScript |
-| Vite | Development server and build tool |
-| Tailwind CSS | Styling and responsive design |
-| React Router | Client-side routing |
-| React Icons | UI icons |
-| ESLint | Code quality and linting |
- 
-## 📁 Project Structure
- 
-```
-Bariq/
-├── src/
-│   ├── components/
-│   │   ├── layouts/
-│   │   └── ui/
-│   │
-│   ├── pages/
-│   │   ├── Home.tsx
-│   │   ├── OurServices.tsx
-│   │   ├── Doctors.tsx
-│   │   ├── Faq.tsx
-│   │   └── Contact.tsx
-│   │
-│   ├── App.tsx
-│   ├── App.css
-│   └── main.tsx
-│
-├── index.html
-├── package.json
-├── vite.config.ts
-├── tsconfig.json
-├── tsconfig.app.json
-├── tsconfig.node.json
-└── eslint.config.js
-```
- 
+
+- 🏠 **Home** — hero, "why choose us," and a services preview
+- 🦷 **Services** — 8 treatments with pricing, pulled from a shared data source
+- 👨‍⚕️ **Doctors** — 6 specialists with credentials and license numbers
+- ❓ **FAQ** — an accordion where only one answer is open at a time
+- 📞 **Contact / Booking** — a fully validated appointment form with an animated confirmation
+- 💬 A floating WhatsApp contact button on every page
+- 📱 Fully responsive, with a working mobile nav menu (closes on link click)
+
+## 🛠 Tech Stack
+
+- **React** + **TypeScript**
+- **Vite** — build tool & dev server
+- **Tailwind CSS** — styling
+- **React Router** — client-side routing across 5 pages
+- **React Hook Form** — typed form state and validation
+- **Framer Motion** — animated booking-confirmation screen
+- **React Icons** — iconography
+- **react-floating-whatsapp** — floating WhatsApp contact widget
+
 ## 🚀 Getting Started
- 
+
 ### Prerequisites
- 
-Make sure you have Node.js and npm installed on your machine.
- 
+- Node.js ≥ 18
+- npm / pnpm / yarn
+
 ### Installation
- 
-Clone the repository:
- 
+
 ```bash
 git clone https://github.com/NojoudCodes/Bariq.git
-```
- 
-Navigate to the project directory:
- 
-```bash
 cd Bariq
-```
- 
-Install the dependencies:
- 
-```bash
 npm install
-```
- 
-## 💻 Running the Project
- 
-Start the development server:
- 
-```bash
 npm run dev
 ```
- 
-Vite will start the development server and provide a local URL where you can view the application.
- 
-## 📜 Available Scripts
- 
-### Development
- 
-```bash
-npm run dev
-```
- 
-Starts the Vite development server.
- 
-### Production Build
- 
+
+Open the local URL provided by Vite in your browser.
+
+### Build for production
+
 ```bash
 npm run build
-```
- 
-Runs TypeScript compilation and creates a production build.
- 
-### Preview
- 
-```bash
 npm run preview
 ```
- 
-Serves the production build locally for previewing.
- 
-### Lint
- 
-```bash
-npm run lint
-```
- 
-Runs ESLint across the project.
- 
+
 ## 🧭 Application Routes
- 
+
 | Route | Page |
 |---|---|
 | `/` | Home |
 | `/services` | Dental Services |
 | `/doctors` | Doctors |
 | `/faq` | Frequently Asked Questions |
-| `/contact` | Contact |
- 
-## 🦷 Services
- 
-The application currently presents several dental services, including:
- 
-- Dental examination and cleaning
-- Teeth whitening
-- Orthodontics
-- Dental implants
-- Root canal treatment
-- Pediatric dentistry
-- Dental emergencies
-- Crowns and bridges
-## 👨‍⚕️ Doctors
- 
-The Doctors page presents a collection of dental specialists with their specialties, professional information, and license information.
- 
-The current project includes specialists in:
- 
-- Orthodontics
-- Dental implants
-- Cosmetic dentistry
-- Endodontics
-- Pediatric dentistry
-- Prosthodontics
-## 🎨 Design
- 
-Bariq uses Tailwind CSS to create a responsive interface with reusable layouts and UI components.
- 
-The project separates page-level content from reusable components, making it easier to maintain and expand the application.
- 
-## 🔧 Development
- 
-To contribute to the project:
- 
-1. Clone the repository.
-2. Install the dependencies.
-3. Create a new branch for your changes.
-4. Make your changes.
-5. Run the linter and production build.
-6. Commit your changes.
-7. Push your branch and open a pull request.
-Before submitting changes, run:
- 
-```bash
-npm run lint
-npm run build
+| `/contact` | Contact & Booking |
+
+## 📁 Project Structure
+
 ```
- 
-## 📌 Project Status
- 
-Bariq is currently under development.
- 
-Future improvements may include additional clinic functionality, backend integration, appointment booking, authentication, and other patient-focused features.
- 
+Bariq/
+├── src/
+│   ├── components/
+│   │   ├── layouts/
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── TopNav.tsx
+│   │   │   └── Footer.tsx
+│   │   ├── sections/
+│   │   │   ├── Hero.tsx
+│   │   │   ├── Why.tsx
+│   │   │   ├── Services.tsx
+│   │   │   ├── Cta.tsx
+│   │   │   └── ScrollToTop.tsx
+│   │   └── ui/
+│   │       ├── Button.tsx
+│   │       └── Titles.tsx
+│   ├── data/
+│   │   └── clinicInfo.ts
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── OurServices.tsx
+│   │   ├── Doctors.tsx
+│   │   ├── Faq.tsx
+│   │   └── Contact.tsx
+│   ├── App.tsx
+│   ├── App.css
+│   └── main.tsx
+├── index.html
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── eslint.config.js
+```
+
+## 🧩 Architecture Notes
+
+- **A single centralized data file (`src/data/clinicInfo.ts`)** holds every piece of repeated content — clinic contact info, working hours, services, doctors, and FAQs. Every page imports from this one source, so content can never drift out of sync between pages.
+- **The contact/booking form is fully typed and validated** with `react-hook-form`: a typed `Inputs` interface, per-field required validation, inline Arabic error messages, and a `<select>` populated dynamically from the services data.
+- **The FAQ accordion tracks a single open item** via `useState<number | null>`, swapping between add/minus icons and ensuring only one answer is visible at a time.
+- **The mobile nav is a single `links` array** rendered in both the desktop menu and the mobile dropdown, with the menu closing automatically when a link is tapped.
+
+## 🎨 Design Tokens
+
+| Token | Value | Use |
+|---|---|---|
+| Cream primary | `#FAF7F2` | Main background |
+| Cream secondary | `#F1EAE0` | Alternate section background |
+| Ink | `#242028` | Primary text |
+| Ink soft | `#615C68` | Secondary text |
+| Terracotta | `#B96A4C` | Primary accent |
+| Terracotta dark | `#9C5539` | Hover/accent variant |
+| Sage | `#6E8570` | Secondary accent |
+| Gold | `#B08D57` | Highlight accent |
+
+**Font:** IBM Plex Sans Arabic.
+
+## 📝 Notes
+
+All clinic details, doctors, pricing, and reviews are fictional — created for portfolio/demo purposes only.
+
 ## 📄 License
- 
-No license has currently been specified for this repository.
- 
-If you intend to make the project open source, consider adding an appropriate license.
- 
----
- 
-Made with ❤️ using React, TypeScript, Vite, and Tailwind CSS.
- 
+
+MIT — feel free to fork and adapt.
