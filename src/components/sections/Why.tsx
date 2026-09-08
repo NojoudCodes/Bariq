@@ -8,7 +8,7 @@ export default function Why() {
       <div className="lg:w-md">
         <Titles
           subtitle="لماذا عيادة بريق"
-          SubtitleStyles="text-sm text-terracotta"
+          subtitleStyles="text-sm text-terracotta"
           title="نهتم بأدق التفاصيل، من الاستقبال حتى ما بعد العلاج"
           titleStyles="font-bold text-ink text-xl lg:text-3xl mt-4"
         />
